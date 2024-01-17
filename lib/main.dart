@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const Home());
+  runApp(const App());
 }
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class App extends StatelessWidget {
+  const App({super.key});
 
   // This widget is the root of your application.
   @override
@@ -16,11 +16,9 @@ class Home extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 255, 255, 255)),
         useMaterial3: false,
       ),
-      home: const Text(
-        "EnDawdle",
-        style: TextStyle(
-          color: Color.fromARGB(255, 255, 255, 255),
-          decoration: TextDecoration.none
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("EnDawdle"),
         ),
       ),
     );
